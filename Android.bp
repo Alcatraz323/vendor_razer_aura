@@ -45,27 +45,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "DaxUI",
-	owner: "razer",
-	apk: "proprietary/system/app/DaxUI/DaxUI.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "daxService",
-	owner: "razer",
-	apk: "proprietary/system/priv-app/daxService/daxService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "CneApp",
 	owner: "razer",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -107,30 +86,6 @@ android_app_import {
 		enabled: false,
 	},
 	soc_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentOKGoogleWCD9340",
-	owner: "razer",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "HotwordEnrollmentXGoogleWCD9340",
-	owner: "razer",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
 }
 
 android_app_import {
@@ -213,13 +168,6 @@ dex_import {
 	name: "tcmclient",
 	owner: "razer",
 	jars: ["proprietary/system/framework/tcmclient.jar"],
-}
-
-dex_import {
-	name: "com.android.hotwordenrollment.common.util",
-	owner: "razer",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
 }
 
 dex_import {
